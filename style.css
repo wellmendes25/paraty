@@ -1,0 +1,306 @@
+/* Geral */
+
+body{
+    margin: 0;
+    padding: 0px;
+}
+
+*{
+   font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+
+/* Cabeçalho */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+header img{
+    padding: 10px 0px 0px 100px;
+}
+
+header ul{
+    display: flex;
+    padding-right: 50px;
+    
+    
+}
+
+header li {
+    list-style: none;
+   
+
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+
+}
+
+header a:hover{
+    color: rgba(0, 0, 0, 0.678);
+    font-size: 22px;
+    transition: 0.7s;
+    background: u;
+}
+
+.container-topo{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.imagem-estacao{
+   filter: brightness(40%);
+    width: 100%;
+   
+}
+
+
+ .fonte-topo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    line-height: 10px;
+    
+}
+
+.fonte-topo h1,h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Fonte Paraty */
+
+#paraty{
+    font-size: 50px;
+  
+}
+
+#paraty::first-letter{
+    font-size: 60px;
+}
+
+
+/* Corpo */
+
+main{
+    width: 70%;
+    margin: 0px auto;
+}
+
+h3{
+    text-align: center;
+    font-size: 20px;
+}
+
+main img{
+    width: 100%;
+}
+
+main p::first-letter{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+p{
+    text-align: justify;
+}
+
+
+/* container pontos turisticos */
+
+.container-pontos-turisticos{
+    margin: 0 0;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.container-pontos-turisticos h3{
+    padding: 10px;
+}
+
+.container-pontos-turisticos img{
+    width: 100%;
+}
+
+.conteudo-pontos-turisticos{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.lista-main li::before{
+    content: url(imagens/seta.png);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 4px;
+}
+
+
+
+
+/* Container galeria de fotos */
+
+.container-galeria-fotos{
+    margin: 0 auto;
+    width: 70%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+.imagens-galeria img{
+    width: 310px;
+    padding: 2px;
+
+}
+
+.imagens-galeria{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imagens-galeria img{
+    opacity: 0.7;
+}
+
+.imagens-galeria img:hover{
+    opacity: 1;
+    transition: 1.2s;
+}
+
+/* rodapé */
+
+footer{
+    height: 40px;
+    background-color: yellow;
+}
+
+footer p{
+    font-size: 18px;
+    padding-top: 10px;
+    text-align: center;
+    background: url;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    main, .conteudo-pontos-turisticos, .container-galeria-fotos {
+        width: 100%;
+    }
+
+    header {
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    main, .conteudo-pontos-turisticos, .container-galeria-fotos {
+        width: 90%;
+    }
+
+    header {
+        padding: 10px 20px;
+    }
+
+    .imagens-galeria img {
+       width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+   
+
+    header img {
+        padding: 10px 0;
+    }
+
+    .fonte-topo h1 {
+        font-size: 36px;
+    }
+
+    #paraty {
+        font-size: 40px;
+    }
+
+    #paraty::first-letter {
+        font-size: 50px;
+    }
+
+    .imagens-galeria img {
+        width: calc(100% - 4px);
+    }
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header a {
+        display: none;
+    }
+
+    header img {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .conteudo-pontos-turisticos, .container-galeria-fotos {
+        width: 90%;
+    }
+
+
+
+}
+
+
+@media (max-widcóth: 1200px) {
+    main, .conteudo-pontos-turisticos, .container-galeria-fotos {
+        width: 80%;
+    }
+    header {
+        padding: 10px 30px;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    main, .conteudo-pontos-turisticos, .container-galeria-fotos {
+        width: 90%;
+    }
+    header {
+        padding: 10px 20px;
+    }
+    .imagens-galeria img {
+        width: calc(50% - 4px);
+    }
+}
